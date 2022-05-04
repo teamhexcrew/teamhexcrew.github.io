@@ -1,3 +1,143 @@
-<html>
-Success
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="top">
+     <div class="left">
+        <img src="logo.jpeg" alt="logo" class="logo">
+        <h2 class="name">Team-Hex<span class="red">C</span>rew</h2>
+     </div>
+     <div class="right">
+        <p class="rightpar">Create Inspire For Future</p>
+     </div> 
+  </div>  
+  <div class="menu">
+      <ul type="none">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About_project</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Demo</a></li>
+
+      </ul>
+  </div>
+  <!-- for about pro -->
+  <div class="mainap">
+     <div class="cen">
+        <div class="head">
+            <h2>THE <span class="red">R</span>ECON FRAMEWORK</h2>
+            <p class="par">  By team HEX<span class="red">C</span>REW</p>
+        </div>
+     </div>
+     <div class="smile">
+        <div class="content">
+            <p class="soul">Application that provides seamless indoor navigation using WIFI signals of that location and available sensors (Gyroscope, Accelerometer, Magnetic Field) of any basic smartphones. No additional infrastructure (extra beacon) or no known WIFI network is required (only the signal strength is measured, so the user’s smartphone need not be connected).</p><br>
+            <h3 class="head1">We implemented this in two aspects</h3>
+            <br>
+            <table>
+                <tr>
+                  <th><h2>THE RECON FRAMEWORK</h2></th>
+                  <th>Organisations/developers can use our algorithms and modules to create custom IPS applications for their organisations based on the requirements.</th>
+                </tr>
+                <tr>
+                  <td><h2>PLOTSENZ</h2></td>
+                  <td>Mobile application (built using the Recon Framework) that provides indoor navigation and LBS (Location Based Services)</td>
+                </tr>
+              </table>
+              <br>
+              <p class="eee">
+                IPS is not widespread like GPS as the requirement differs with case and infrastructure. <b>By providing IPS development tools (that do not require external infrastructure) as a framework organisations/developers can build IPS applications easily</b></p> 
+               <br><p class="happy"> We implemented a real-time error correction ML Algorithm to filter noise in sensor data and improvised existing IPS technology to scale and Plotsenz acts as an overlay to existing GPS applications which seamlessly switches to IPS mode on entering indoors. Plotsenz universal IPS map is similar to google maps, where public contributors can scan and add locations to the map.                
+              </p>
+              <br>
+              <h2>Problem Statement Title</h2>
+              <br>
+              <P>Seamless indoor-outdoor navigation</P>
+              <br>
+              <h2>Problem Statement</h2>
+              <br>
+              <P>One of the major uses of Navigation based applications is Location-Based Services (LBS) which constitutes a significant portion of the navigation application usage. The availability of location-sensitive smartphones, with wireless broadband high-speed connections, has made low-cost applications available to a huge audience and there exists a lot of innovation in designing new types of technology and applications using these devices. Typically, it is seen that outdoor positioning is generally GPS/GNSS based. However, indoor positioning is generally based on WLAN technology. The primary reason is that GPS generally does not work for indoor applications. Uninterrupted good accuracy positioning needs thinking in the fusion of multiple technologies (Smart Phone Sensors, Wi-Fi, BLE beacons, GNSS, Dead Reckoning, etc.) to deliver a seamless outdoor and indoor positioning experience. To design/develop new ideas and mobile apps which make use of these technologies (and even other signals of opportunity) to provide seamless indoor-outdoor positioning and provide innovative location-based services.</P>
+              <br>
+              <h4>The following table summarises our innovation and improvisations to<b> IPS technologies </b>in the context of The RECON FRAMEWORK and the app PLOTSENZ (android version) </h4>
+              <br>
+              <table>
+                  <tr>
+                      <th><b>Method</b></th>
+                      <td><b>Existing Problems</b></td>
+                      <td><b>Our Innovation</b></td>
+                  </tr>
+                  <tr>
+                    <th><b>GNSS</b></th>
+                    <td><b>N/A</b></td>
+                    <td>The framework uses Global Navigation Satellite System data in the model creation algorithms for calibrating the in-app coordinate systems</td>
+                </tr>
+                <tr>
+                    <th><b>Dead Reckoning</b></th>
+                    <td>Sensors - Noise and user’s casual hand movement causes <b>False Steps</b></td>
+                    <td>ML-based algorithm for onboard real-time error correction</td>
+                </tr>
+                <tr>
+                    <th><b>WIFI </b></th>
+                    <td><b>WIFI Repeaters:</b> Same SSID so errors in computing location using the WIFI mapping methods</td>
+                    <td>The framework’s mapping algorithm fuses GPS data with the WIFI map, (Generally, wifi repeaters are separated by distances that GPS is accurate enough to differentiate)</td>
+                </tr>
+                <tr>
+                    <th><b>WIFI</b></th>
+                    <td><b>Signal Strength Variations Between Devices</b> (different signal strength values even at the same location) - due to differences in antenna hardware</td>
+                    <td>The Modules in the framework computes a special matrix, that is analogous to a structured ratio of signal strengths. Can be used to compute locations accurately even when WIFI signal strength differs.</td>
+                </tr>
+                <tr>
+                    <th><b>WIFI</b></th>
+                    <td><b>Mobile Hotspots </b>- recorded when mapping, might not be available during navigation.</td>
+                    <td>The mapping module can differentiate mobile AP from ACTUAL WIFI</td>
+                </tr>
+                <tr>
+                    <th><b>Magnetic Field</b></th>
+                    <td><b>External Magnetic Field </b>- when on move, changing environmental magnetic field creates errors in the angle computation</td>
+                    <td>Our modules can identify the influence of external magnetic field in the angle computation and calibrates automatically with the new magnetic field</td>
+                </tr>
+                <tr>
+                    <th><b>Visualisation</b></th>
+                    <td><b>No general Visualisation /Analysis tools for spatial movement data</b></td>
+                    <td>We developed our own set of tools that can create path maps from spatial movement data and can be used for analysis.</td>
+                </tr>
+                <tr>
+                    <th><b>Map Editor /Creator</b></th>
+                    <td><b>No tool available for creating indoor maps</b></td>
+                    <td>We developed an online map creator which can directly import raw spatial movement data recorded using the framework modules.</td>
+                </tr>
+              </table>
+              <br>
+              <h2>Introduction:</h2>
+              <br>
+              <p>With current GPS Technology seamless navigation is possible for a person who has a smartphone. We can able to track down our location, wherever on Earth by GPS.</p>
+              <br>
+              <p>Consider a person who gets to attend an important examination. But his exam center is located in a remote place. GPS tracks down in spite of the remote location. But the real problem arises here. Once he gets there, he finds many campuses and infrastructure. When he needs to locate his exam hall, GPS is of no use. Even though GPS tracks the hardest location, it is limited to a certain point of location and it could not give the exact indoor location. A panic scenario starts as he couldn’t able to find his examination hall at the right time. Indoor accuracy is the greatest drawback of GPS.</p>
+              <br>
+              <P>This problem can be overcome by IPS ( Indoor Positioning System). Even though IPS can be
+                seen /developed, it is not widespread due to its limitations like external hardware requirements and smartphone sensor abilities. Mostly they are limited to a particular organisation and cannot be used by common people. </P>
+              
+            <br><p>IPS can be seen in supermarkets, Malls, and companies. It works only in that particular area which gains profits and advantages to those companies, whereas the common man gets no use of it as he could not use it whenever he desires. Common people are being affected by this in various situations. Take a real situation, where a patient is admitted to a hospital, which lacks nurses. When he is in need of a nurse, the person who is accompanying the patient tries to find the nurse but she is nowhere to be found. As the person doesn’t know in which room she would be in.</p>
+              <p>Even in Factories which has different sectors, accidents may take place anywhere in those
+                sectors. But without IPS, members who need to save the people couldn’t be able track down the exact position of the incident. Alike this there are so many places like airports, movie theatres, parking garages, stadiums, etc.. which are in need of IPS.</p>
+              
+              <br>  <P>To overcome all these problems our project gives a valid solution only by using smartphones and their available sensors. As each and every building has a WIFI signal, with the help of it and our designed app, we would be able to provide Indoor Positioning System. As soon as the person opens his phone to track his room/class, our app provides the signal which eventually led to the desired place. This works just like GPS right? Yes Of course. Along with the magnificent work of both GPS and IPS, we can track any location within a span of time.</P>  
+              <p>Due to this students might easily get to their examination hall without any stress. Advanced nurse calling systems could locate the nearest nurse. Several people can be saved from accidents in factories.</p>
+              <p>Our main ambition is to provide an easy tracker which can be used in day-to-day life by any
+                person who has a smartphone and can track the location just like GPS</p><br>
+              <h2>MAKING OF IPS AT ITS BEST STAGE WHERE IT COULD OVERCOME THE USE OF GPS.</h2><br>
+              <h2>Technical Details and documentation</h2><br>
+
+        </div>
+     </div>
+  </div>
+ <script src="index.js"></script>   
+</body>
 </html>
