@@ -22,7 +22,7 @@
     <div class="menu">
       <ul type="none">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About_project</a></li>
+        <li onclick="aboutproject()"><a href="#" id="kingofking">About_project</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Team</a></li>
         <li><a href="#">Contact</a></li>
@@ -33,11 +33,11 @@
   </div>
 
   <!-- for about pro -->
-  <div class="mainap">
+  <div class="mainap" id="main_ap">
      <div class="cen">
         <div class="head">
             <h2>THE <span class="red">R</span>ECON FRAMEWORK</h2>
-            <p class="par">  By team HEX<span class="red">C</span>REW</p>
+            <p class="par">  By team HEX<span class="red28">C</span>REW</p>
         </div>
      </div>
      <div class="smile">
@@ -47,11 +47,11 @@
             <br>
             <table>
                 <tr>
-                  <th><h2>THE RECON FRAMEWORK</h2></th>
-                  <th>Organisations/developers can use our algorithms and modules to create custom IPS applications for their organisations based on the requirements.</th>
+                  <th><h3>THE RECON FRAMEWORK</h3></th>
+                  <td>Organisations/developers can use our algorithms and modules to create custom IPS applications for their organisations based on the requirements.</td>
                 </tr>
                 <tr>
-                  <td><h2>PLOTSENZ</h2></td>
+                  <td><h3>PLOTSENZ</h3></td>
                   <td>Mobile application (built using the Recon Framework) that provides indoor navigation and LBS (Location Based Services)</td>
                 </tr>
               </table>
@@ -120,6 +120,7 @@
               </table>
               <br>
               <hr>
+              <br>
               <center><h2>1.Introduction:</h2></center>
               <br>
               <p>With current GPS Technology seamless navigation is possible for a person who has a smartphone. We can able to track down our location, wherever on Earth by GPS.</p>
@@ -140,6 +141,7 @@
                 person who has a smartphone and can track the location just like GPS</p><br>
               <h3>MAKING OF IPS AT ITS BEST STAGE WHERE IT COULD OVERCOME THE USE OF GPS.</h3><br>
               <hr>
+              <br>
               <center><h2>2.Technical Details and documentation</h2><br></center>
               <h2>2.1 Modules:</h2>
               <p>The Framework contains three main categories of modules, Mapping, Navigation, and Visualisation tools.</p><br>
@@ -157,10 +159,10 @@
               <br>
               <h2>2.1.1.1 GNSS:</h2>
               <p>GNSS-based location computation is the primary mode for outdoor navigation. All the mapping modules in the <span class="red28">framework use Global Navigation Satellite System data in the model creation algorithms for calibrating the in-app coordinate systems</span>. Methods in this module can also be used directly to create a GPS application </p><br>              <hr>
-              <hr>
+              <br>
               <h2>2.1.1.2 Dead reckoning:</h2><!--img-->
               <p>Dead reckoning, determination without the aid of live GNSS of the position, from the record of the courses walked, the distance made (which can be estimated from velocity), the known starting point (identified using the WIFI or BLE module), and the known or estimated drift. The MEMS sensors present in most smartphones are not so accurate, they produce noise in the data which makes computing velocity and angle tricky. Also during navigation, we need to distinguish between the user moving his hands and walking. To account for these conditions, we have developed an ML-based algorithm for onboard real-time error correction. Which acts as a low pass filter to the noise in the data and ignores casual hand movements, bumping up the accuracy.</p><br>
-              <hr>
+              <hr><br>
               <h2>2.1.1.3 WIFI:</h2>
               <p>The WIFI module can be used to record Wifi signal strengths data models (RSSI - Received Signal Strength Information) as a .iap file, the algorithm can precisely compute the coordinates with these models when navigating. Recording the WIFI RSSI can be mapped with any wifi-enabled edge devices without actually connecting to any of those WIFI networks being scanned.</p><br>
               <h2>2.1.1.3.1 WIFI Repeaters:</h2>
@@ -219,22 +221,22 @@
               <br>
               <h2>2.1.2.1 Accelerometer</h2>
               <p>An accelerometer is an electronic sensor that measures the acceleration forces acting on an object, to determine the object’s position in space and monitor the object’s movement. Acceleration, which is a vector quantity, is the rate of change of an object’s velocity (velocity being the displacement of the object divided by the change in time). <span class="red28">We are fusing the accelerometer readings with the data from the gyroscope and G-sensor</span>to calculate the distance travelled.</p><br>
-              <hr>
+              <hr><br>
               <h2>2.1.2.2 Gyroscope</h2>
-              <p>A gyroscope sensor is a device that can measure and maintain the orientation and angular velocity of an object. These are more advanced than accelerometers. These can measure the tilt and lateral orientation of the object whereas an accelerometer can only measure the linear motion. <span class="red"> We use the gyroscope readings to differentiate between walking and casual hand movements.</span>Combined with other sensors this is used for computing the walking distances.</p><br>
-              <hr>
+              <p>A gyroscope sensor is a device that can measure and maintain the orientation and angular velocity of an object. These are more advanced than accelerometers. These can measure the tilt and lateral orientation of the object whereas an accelerometer can only measure the linear motion. <span class="red28"> We use the gyroscope readings to differentiate between walking and casual hand movements.</span>Combined with other sensors this is used for computing the walking distances.</p><br>
+              <hr><br>
               <h2>2.1.2.3 GPS</h2>
               <p>The Device’s GPS (Global Positioning System) is being used to get the latitude and longitude of the device for outdoor navigation and for indoors, the <span class="red28">GPS is used for calibrating the in-app coordinate systems at equal intervals </span></p><br>
-              <hr>
+              <hr><br>
               <h2>2.1.2.4 Magnetic-field</h2>
               <p>We use the device’s onboard magnetic field sensor to measure the magnetic field strengths in the X Y and Z axis to compute the device’s angle with respect to north. This data also plays an <span class="red28"> important role in the real-time error correction module that we implemented</span></p><br>
-              <hr>
+              <hr><br>
               <h2>2.1.2.5 RSSI</h2>
               <p>The  RSSI (Received Signal Strength Information) is the primary data that the WIFI and BLE modules depend on. We collect the WIFI/BLE beacon strength process it using <span class="red28">The Signal Relation Computer Algorithm </span>to precisely compute the location indoors.</p><br>
-              <hr>
+              <hr><br>
               <h2>2.1.2.6 G-sensor</h2>
               <p>We use the gravity sensor data in most of the modules for <span class="red28"> calibrating the orientations and error corrections.</span>The iap model creation algorithm uses this data to analyze variations in the pattern extensively for improving the accuracy of the maps.</p><br>
-              <hr>
+              <hr><br>
               <h2>2.1.3 Mapping Methods:</h2>
               <p>We defined several standards for mapping indoors using our modules. These standard mapping methods can be followed or depending upon the  problem, developers can develop their mapping standards</p><br>
               <h2>2.1.3.1 Wall mapping:</h2><!--img-->
@@ -247,7 +249,7 @@
               </center>
               <p>In this mode the user needs to walk close to the wall tracing its perimeters. Works with closed polygons (concave and convex) and open structures (buildings/structures that are not closed)</p><br>
               <p>Data from this module will have metadata for the online editor to recognise this as wall mapping data, which will be reflected in the rendering process. (elevation in z-axis and shadows in rendering)</p>
-              <hr>
+              <hr><br>
               <h2>2.1.3.2 Path mapping:</h2><!--img-->
               <p>Similar to wall mapping methods, we have defined standards for mapping walkable areas. Path mapping requires the same specs as wall mapping. The process is also similar, the user who is mapping should walk through the Campus dt holding the smartphone pointing the way they walk.</p><br>
               <p>The intersection points in the path will be recognised by the module, and path joint nodes will be added automatically which will be later used in the navigation, for path computation to the destination. These nodes can be added or edited manually with the map editor (more will be discussed in their respective sections).</p><br>
@@ -258,10 +260,10 @@
               <p>Des_Node are markers that can be placed over the map to identify rooms/locations on the map. It can contain location names, notes/descriptions,s, and constraints. When mapping the path, des_Nodes can be added, later in the online map editor, the user can update the name and other parameters.</p><br>
               <h2>Nav_Node:</h2>
               <p>Nav_Nodes are auto-generated by the algorithms at junctions and turnings. This can also be added manually. These nav_nodes are used for finding the connecting path between the user’s current location and the destination Des_node.</p><br>
-              <hr>
+              <hr><br>
               <h2>2.1.3.4 WIFI / BLE  mapping:</h2>
               <p>In WIFI / BLE mapping, We receive RSSI information continuously in intervals of time to generate the .iap model and draw the map. This happens simultaneously with other mappings (Path mapping and wall Mapping).</p><br>
-              <hr>
+              <hr><br>
               <h2>Rendering smd3 (3D Spatial movement Data):</h2>
               <p>Using this framework, developers can create applications that can visualise Spatial movement data paths. The rendering modules support all types of spatial movement data collected using any of the mapping modules from the recon framework because they all follow the same standards of spatial movement mapping defined by us in the recon framework.</p><br>
               <h2>2D rendering:</h2>
@@ -336,8 +338,7 @@
               <span class="header12">Web: Javascript -</span><span class="des12">for building web applications.</span><br>
               <span class="header12">Python:</span><span class="des12">for data analysis and developing applications.</span><br>
               <span class="header12">Android/iOS:</span><span class="des12"> for creating mobile apps that use smd3 visualisations.</span><br>
-              <hr>
-              <br>
+              <br><hr><br>
               <h2>Navigation:(Shortest Path, All possible Paths)</h2>
               <p>Navigation modules convert .iap files to graphs by processing them after combining them with the node data. When initialising it uses latitude and longitude from GPS to fetch the nearest iap data from the server, following which it computes the starting position by measuring the wifi signals and processing it with the relative signal strength algorithm.</p><br>
               <br>
