@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 *::-webkit-scrollbar{
-    width:3px;    
+    width:10px;    
 }
 *::-webkit-scrollbar-track{
-      border: 2px solid black;
+      border: 0px solid black;
+      border-radius: 10px;
       border-radius: 10%;
 }
 *::-webkit-scrollbar-thumb{
