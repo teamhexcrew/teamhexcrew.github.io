@@ -42,3 +42,13 @@ function demopage12(){
     document.getElementsByTagName('a').style.color="gray";
 
 }
+
+//document.getElementById('menu26').style.display="block";
+function undefeatable() {
+    var x = document.getElementById("menu26");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
