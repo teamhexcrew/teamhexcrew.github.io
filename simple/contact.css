@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    
+}
+body{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.tiger{
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lion{
+    width: 65%;
+}
+.cheeta{
+    width: 35%;
+}
+input,button{
+    width: 80%;
+    margin: 20px;
+    border: 1px solid white;
+    padding: 10px;
+}
+button{
+    color: red;
+    transition: 2s;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 2s;
+}
+textarea{
+    width: 80%;
+    height: 50%;
+    margin: 20px;
+    border: 1px solid white;
+    padding: 10px;
+}
+.red{
+    color: red;
+}
+.queen{
+    margin-left: 50px;
+}
+.email28{
+    margin: 10px;
+    margin-left: 0px;
+}
+@media only screen and (max-width: 1000px) {
+    .cheeta{
+        display: none;
+    }
+    .lion{
+        width:90%;
+        margin-left:10%;
+    }
+}
+

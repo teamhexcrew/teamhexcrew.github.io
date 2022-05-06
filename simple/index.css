@@ -22,7 +22,7 @@ body{
 .superman{
     position:sticky;
     top:0px;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
 }
 .summa{
@@ -114,7 +114,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 p{
-    text-indent: 170px;
+    text-indent: 80px;
     line-height: 25px;
     letter-spacing: 1px;
 }
@@ -154,6 +154,122 @@ p{
     color: gray;
     font-size: 15px;
 }
-/*.mainap{
+.mainap{
     display: none;
-}*/
+}
+
+.team{
+    width:100% ;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.members{
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+ul li{
+    list-style-type: none;
+    padding-left: 30px;
+}
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    transition: 2s;
+}
+.profile:hover{
+    transform: rotate(0deg);
+    transition: 2s;
+    border-radius: 20px;
+}
+.man{
+    width: 100px;
+}
+li{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+}
+.solo{
+    color:gray;
+    cursor: pointer;
+}
+.team{
+    display: none;
+}
+iframe{
+    width:100%;
+    height:1000px;
+}
+.hiphop{
+    width: 100%;
+    height: 200vh;
+}
+.hiphop{
+    display: none;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .hulk1,.hulkk2    {
+      width: 100%;
+  }
+  .thor{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .thor{
+      display: none;
+  }
+  .home{
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .teamhexcrew,.recon,.aim{
+      width: 20%;
+      border: 1px solid black ;
+      border-radius: 20px ;
+      z-index: -10;
+      margin: 10px;
+      padding: 10px;
+      height: 400px;
+
+
+  }
+#cheat1,#cheat2,#cheat3{
+      border-radius: 20px;
+      z-index: -100;
+      width: 100%;
+  }
